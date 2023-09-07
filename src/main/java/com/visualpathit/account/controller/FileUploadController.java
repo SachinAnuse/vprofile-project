@@ -38,7 +38,7 @@ public class FileUploadController {
 	String uploadFileHandler(@RequestParam("name") String name,@RequestParam("userName") String userName,
 			@RequestParam("file") MultipartFile file) {
 		
-		System.out.println("Called the upload file :::" );
+		System.out.println("Called the upload file ::" );
 		if (!file.isEmpty()) {
 			try {
 				byte[] bytes = file.getBytes();
